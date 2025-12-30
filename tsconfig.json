@@ -1,10 +1,11 @@
 {
   "extends": "@tsconfig/recommended",
   "compilerOptions": {
-    "target": "ES2021",
-    "lib": ["ES2021", "ES2022.Object", "DOM"],
-    "module": "NodeNext",
-    "moduleResolution": "nodenext",
+    "outDir": "dist",
+    "target": "ES2022",
+    "lib": ["ES2022", "ES2022.Object", "DOM"],
+    "module": "ES2022",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -15,8 +16,6 @@
     "allowJs": true,
     "strict": true,
     "strictFunctionTypes": false,
-    "outDir": "dist",
-    "types": ["jest", "node"],
     "resolveJsonModule": true
   },
   "include": ["**/*.ts", "**/*.js"],
